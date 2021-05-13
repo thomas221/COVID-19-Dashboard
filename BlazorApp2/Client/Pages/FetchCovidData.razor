@@ -1,0 +1,46 @@
+@page "/fetchcoviddata"
+@using BlazorApp2.Shared
+@inject HttpClient Http
+
+<h1>Covid data. Vandaag @dateOfToday</h1>
+
+
+@if (coviddatatotaldeaths == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<p>Totaal aantal besmettingen in Belgi&euml;:</p>
+    <p>@coviddatatotalinfected</p>
+    <p>Percentage besmet:</p>
+    <p>@percentagebesmet &percnt;</p>
+    <p>Totaal aantal doden in Belgi&euml;:</p>
+    <p>@coviddatatotaldeaths</p>
+    <p>Percentage gestorven Belgi&euml;:</p>
+    <p>@percentagegestorven &percnt;</p>
+}
+
+@code {
+    private string coviddatatotaldeaths="";
+    private string coviddatatotalinfected="";
+    private double percentagebesmet=0.0;
+    private double percentagegestorven=0.0;
+    private string dateOfToday="";
+    private int totalebevolking = 11521238;
+    private string totaalgevaccineerd="";
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        coviddatatotaldeaths = await Http.GetStringAsync("CovidDataTotalDeaths");
+        coviddatatotalinfected = await Http.GetStringAsync("CovidDataTotalInfected");
+        percentagebesmet = Int32.Parse(coviddatatotalinfected) * 100.0 / totalebevolking;
+        percentagegestorven = Int32.Parse(coviddatatotaldeaths) * 100.0 / totalebevolking;
+        dateOfToday = DateTime.Now.ToString("dd/MM/yyyy");
+        totaalgevaccineerd = await Http.GetStringAsync("CovidDataTotalVaccinated");
+    }
+
+}
