@@ -369,6 +369,6 @@ C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.
 C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\Razor\Pages\FetchCovidData.razor.g.cs
 C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\spveP3f5otEd9LCxa6IqxbrmAW_EPmbfSzDrNpxmHBA=.hash
 C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\shU7x3a3eZarepo2kaY0GK3S_QmaUDvbTiJ9adYNRAw=.hash
-C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\4c1YGOdiuee65jk1ZHnBFi0LYE1ME4eGLF68B388cAM=.hash
-C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\Gtnudbfq8PP0KBKxc0apnp8qZBtor2Ly0P0bZS5mKxY=.hash
-C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\weXg9mEkDr9Nxu8-0M1nn7AuRsa3d6-gBiV12ggO2l0=.hash
+C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\00jK57gt_F6z0FgdTjo8ph_8cLEFbDs3PZQCDFCoSd4=.hash
+C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\x-_ykiAgB5uIWVMZ0TQZU4FovTrukI6xjTz-XPY_0oo=.hash
+C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\obj\Debug\netstandard2.1\integrity\6Ws74u9tRivmsDTvGQEe57CPci8nfYycLFt9MLS2k1I=.hash
