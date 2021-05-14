@@ -93,13 +93,13 @@ using BlazorApp2.Shared;
 #nullable restore
 #line 24 "C:\Users\thoma\source\repos\BlazorApp2\BlazorApp2\Client\Pages\FetchCovidData.razor"
        
-    private string coviddatatotaldeaths="";
-    private string coviddatatotalinfected="";
-    private double percentagebesmet=0.0;
-    private double percentagegestorven=0.0;
-    private string dateOfToday="";
+    private string coviddatatotaldeaths;
+    private string coviddatatotalinfected;
+    private double percentagebesmet;
+    private double percentagegestorven;
+    private string dateOfToday;
     private int totalebevolking = 11521238;
-    private string totaalgevaccineerd="";
+    private string totaalgevaccineerd;
 
 
 
@@ -108,8 +108,8 @@ using BlazorApp2.Shared;
     {
         coviddatatotaldeaths = await Http.GetStringAsync("CovidDataTotalDeaths");
         coviddatatotalinfected = await Http.GetStringAsync("CovidDataTotalInfected");
-        percentagebesmet = Int32.Parse(coviddatatotalinfected) * 100.0 / totalebevolking;
-        percentagegestorven = Int32.Parse(coviddatatotaldeaths) * 100.0 / totalebevolking;
+        percentagebesmet = Double.Parse(coviddatatotalinfected) * 100 / totalebevolking;
+        percentagegestorven = Double.Parse(coviddatatotaldeaths) * 100 / totalebevolking;
         dateOfToday = DateTime.Now.ToString("dd/MM/yyyy");
         totaalgevaccineerd = await Http.GetStringAsync("CovidDataTotalVaccinated");
     }
